@@ -11,7 +11,7 @@ var combatLog = $("#message-box");      // Reference to the combat message box
 // Enemy Data
 var enemy = {
     name: 'Gork the Orc',
-    hp: 20,
+    hp: 50,
     hpSpot: $("#enemy-hp"),
     attackInterval: null,
     damage: 7,
