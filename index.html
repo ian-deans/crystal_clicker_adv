@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Whack an Orc</title>
 </head>
@@ -14,18 +15,23 @@
     <div class="flex just-center align-center game-container">
 
         <div class="flex fcol column just-end">
+            <div id="result-message" class="flex fcol just-center align-center">
+
+            </div>
             <div class="fighter-container flex fcol align-center just-center">
 
                 <div class="flex just-around name-plate">
-                    <span class="name-span">PLAYER</span>
-                    <span class="hp">50</span>
+                    <span id="player-name" class="name-span">PLAYER</span>
+                    <span id="player-hp" class="hp">50</span>
                 </div>
 
                 <div class="flex fcol just-center align-center">
-                    <img class="fighter-img" src="assets/images/barbarian_1.jpeg">
+                    <figure class="img-container">
+                        <img class="fighter-img" src="assets/images/barbarian_1.jpeg">
+                    </figure>
                     <div class="flex just-center player-actions">
                         <button class="player-button attack">Attack</button>
-                        <!-- <button class="player-start-button">Start</button> -->
+                        <button class="player-button start">Start</button>
                     </div>
                 </div>
 
@@ -37,19 +43,25 @@
             <div class="fighter-container flex fcol align-center just-center">
 
                 <div class="flex fcol just-center align-center">
-                    <img class="fighter-img" src="assets/images/orc_1.jpeg">
+                    <figure class="img-container">
+                        <img class="fighter-img" src="assets/images/orc_1.jpeg">
+                    </figure>
                 </div>
 
                 <div class="flex just-around name-plate">
-                    <span class="hp">50</span>
-                    <span class="name-span">ENEMY</span>
+                    <span id="enemy-hp" class="hp">50</span>
+                    <span id="enemy-name" class="name-span">ENEMY</span>
                 </div>
+
+            </div>
+
+            <div id="message-box" class="flex fcol just-start align-center">
 
             </div>
         </div>
 
     </div>
-
+    <script src="assets/js/game.js"></script>
 </body>
 
 </html>

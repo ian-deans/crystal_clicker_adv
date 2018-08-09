@@ -1,62 +1,68 @@
-* {
-    border: solid red 1px;
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-.flex { display: flex; }
-.fcol { flex-direction: column; }
-
-.just-center { justify-content: center; }
-.just-around { justify-content: space-around; }
-.just-end { justify-content: flex-end; }
-.just-start { justify-content: flex-start; }
-
-.align-center { align-items: center; }
-
-
-.game-container {
-    width: 95vw;
-    height: 90vh;
-    margin: auto;
+/* Background image*/
+body {
+    background-image: url('http://orig09.deviantart.net/7531/f/2013/333/d/d/battleground_plunder___by_abarai_kun-d6w3smn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .column {
     width: 50%;
     height: 100%;
 }
+.game-container {
+    width: 95vw;
+    height: 90vh;
+    margin: auto;
+}
+
+#message-box {
+    padding-top: 10px;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#message-box .message {
+    font-size: 20px;
+    color: red;
+}
+#result-message {
+    font-size: 4em;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+#result-message.victory { color: green; }
+#result-message.failure { color: red; }
+
 
 .fighter-container {
     height: 600px;
 }
-
 .name-plate {
-    padding: 5px;
-    border-radius: 35px;
-    width: 80%;
-    font-size: 2em;
     background-color: #414141;
+    border-radius: 35px;
     color: #bada55;
+    font-size: 2em;
+    padding: 5px;
+    width: 80%;
 }
-
 .name-plate span {
     text-align: center;
 }
-
 .player-button {
     height: 45px;
     width: 140;
     margin: 2px;
 }
+.player-button.attack { background-color: #e46a19; }
+.player-button.attack:disabled { background-color: #1d1a1a; }
 
-.attack {
-    background-color: #e46a19;
-}
-.attack:hover {
-    background-color: #fd8433;
-}
-.attack:active {
-    background-color: yellow;
-    border: inset black 1px;
-}
-.attack:disabled {
-    background-color: #1d1a1a;
-}
+
+/* Utility Classes */
+.flex { display: flex; }
+.fcol { flex-direction: column; }
+.just-center { justify-content: center; }
+.just-around { justify-content: space-around; }
+.just-end { justify-content: flex-end; }
+.just-start { justify-content: flex-start; }
+.align-center { align-items: center; }
