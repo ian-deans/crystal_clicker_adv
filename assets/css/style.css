@@ -1,0 +1,62 @@
+* {
+    border: solid red 1px;
+    box-sizing: border-box;
+}
+
+.flex { display: flex; }
+.fcol { flex-direction: column; }
+
+.just-center { justify-content: center; }
+.just-around { justify-content: space-around; }
+.just-end { justify-content: flex-end; }
+.just-start { justify-content: flex-start; }
+
+.align-center { align-items: center; }
+
+
+.game-container {
+    width: 95vw;
+    height: 90vh;
+    margin: auto;
+}
+.column {
+    width: 50%;
+    height: 100%;
+}
+
+.fighter-container {
+    height: 600px;
+}
+
+.name-plate {
+    padding: 5px;
+    border-radius: 35px;
+    width: 80%;
+    font-size: 2em;
+    background-color: #414141;
+    color: #bada55;
+}
+
+.name-plate span {
+    text-align: center;
+}
+
+.player-button {
+    height: 45px;
+    width: 140;
+    margin: 2px;
+}
+
+.attack {
+    background-color: #e46a19;
+}
+.attack:hover {
+    background-color: #fd8433;
+}
+.attack:active {
+    background-color: yellow;
+    border: inset black 1px;
+}
+.attack:disabled {
+    background-color: #1d1a1a;
+}

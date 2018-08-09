@@ -1,0 +1,58 @@
+
+In this game the player attacks an enemy in an attempt to lower the enemy's
+health to 0 before the player's own health drops to 0.
+
+Enemy
+    HP
+    Damage
+    *AttackSpeed
+    Name
+    Picture
+
+Player
+    HP
+    Damage
+    *AttackSpeed
+    *Name
+    Picture
+
+ * For phase 2
+
+
+ - Page Load
+    - enemy picture
+    - enemy name
+    - enemy hp
+
+    - player hp
+    - start button
+
+ - Player Clicks Start
+    - player attack button appears
+    - enemy attack interval starts
+
+ - Player Clicks Attack
+    1. Hide attack button
+    2. setTimeout to show attack button
+    3. enemyHP - playerDamage
+    4. check for enemy death
+
+ - Enemy Attacks
+    1. playerHP - enemyDamage
+    2. check for player death
+
+ - Enemy Death
+    - End Game with victory
+
+ - Player Death
+    - End Game with failure
+
+ - End Game
+    1. hide attack button
+    2. clearInterval( enemyAttackInterval )
+    - if victory:
+        - change enemy photo to dead
+        - display results with win message
+    - if failure:
+        - change player photo to dead
+        - display results with loss message
